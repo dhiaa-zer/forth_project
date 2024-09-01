@@ -1,0 +1,168 @@
+
+*{
+    box-sizing: border-box;
+}
+:root{
+
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Very_Dark_Blue: hsl(234, 12%, 34%);
+    --Grayish_Blue: hsl(229, 6%, 66%);
+    --Very_Light_Gray: hsl(0, 0%, 98%);
+}
+
+body{
+
+   display: flex;
+   flex-direction:column;
+   align-items: center;
+   height: 90vh;
+
+   background-color: var(--Very_Light_Gray);
+  
+}
+p{
+    font-family: 'Poppins';
+    margin: 0px;
+    padding: 0px;
+}
+h3{
+    margin-top: 3px;
+    margin-bottom:13px ;
+    font-family: 'Poppins';
+    color: var(--Very_Dark_Blue);
+    font-size: 1.2rem;
+}
+
+.t1{
+   font-size: 1.5rem;
+   color: var(--Grayish_Blue);
+   font-weight: 200;
+}
+
+.t2{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--Very_Dark_Blue);
+
+}
+.t3{
+    margin-top: 5px;
+   font-size: 0.7rem;
+   color: var(--Grayish_Blue);
+  text-align: center;
+  width: 60%;
+}
+
+.header{
+    padding-top:30px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 25%;
+    
+}
+
+.container{
+    height: 75%;
+    width: 90%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 25px;
+}
+
+.col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+}
+
+.col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.Supervisor{
+   border-top-color: var(--Cyan);
+}
+.Calculator{
+    border-top-color: var(--Blue);
+}
+.Karma{
+    border-top-color: var(--Orange);
+}
+.Team_builder{
+    border-top-color: var(--Red);
+}
+
+
+
+.item{
+   position: relative;
+   width: 100%;
+   background-color: white;
+   height: 42%;
+   border-radius: 5px ;
+   border-top-width:3.5px ;
+   border-top-style: solid;
+   padding: 15px;
+   padding-left: 25px;
+   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.item p{
+    font-size:0.7rem ;
+    color: var(--Grayish_Blue);
+}
+
+
+
+img{
+  position:absolute;
+  right: 20px;
+  bottom: 20px;
+  width: 20% ;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+    img{
+        width: 18%;
+    }
+    .container{
+        grid-template-columns: 1fr;
+        row-gap: 15px;
+        column-gap: 0px;
+        height: 100vh;
+        margin-top: 7vh;
+        width: 70%;
+        min-width: 200px;
+    }
+    
+     .item{
+
+        height: 170px;
+     }
+
+    .col2{
+        gap: 15px;
+    }
+    html{
+        font-size: 13.5px;
+    }
+
+
+}
